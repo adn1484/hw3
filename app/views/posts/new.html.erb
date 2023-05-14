@@ -1,0 +1,19 @@
+<h2>Create new post</h2>
+
+<%= form_with :model => @places do |form| %>
+<p>
+  <%= form.label"title", "Post Title" %>
+  <%= form.text_field "title" %>
+</p>
+
+<p>
+  <%= form.label"description", "Post Description" %>
+  <%= form.text_field "description" %>
+</p>
+
+<p>
+  <%= form.hidden_field "place_id" %>
+</p>
+
+<%= form.submit %>
+<% end %>
