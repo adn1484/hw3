@@ -3,9 +3,9 @@
 <ul>
 <% for post in @posts %>
 <li>
-  <%= post["title"] %>
-  <%= post["created_at"] %>
-  <%= post["description"] %>
+  <p><strong><%= post["title"] %></strong></p>
+  <p><%= post["created_at"] %></p>
+  <p><%= post["description"] %></p>
 </li>
 <% end %>
 </ul>
